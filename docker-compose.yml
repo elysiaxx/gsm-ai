@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  gsm-ai:
+    build: .
+
+networks:
+  default:
+    name: "gsm_network"
+    external: true

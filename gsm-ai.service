@@ -1,0 +1,22 @@
+## Gsm Ai Service to predict network packet
+#
+
+[Unit]
+Description=Serivce to predict network packet
+
+
+[Service]
+WorkingDirectory=/home/gsm/Documents/code_gsm/gsm-ai
+
+#User=sammy
+#Group=sammy
+
+ExecStart=/home/gsm/Documents/code_gsm/gsm-ai/main.py
+Restart=on-failure
+KillSignal=SIGINT
+
+StandardOutput=syslog
+
+
+[Install]
+WantedBy=multi-user.target
